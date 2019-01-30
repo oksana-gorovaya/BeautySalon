@@ -7,7 +7,7 @@ class UserService {
     userCreate(username, password) {
         let sql = `INSERT INTO users (username, password) VALUES ('${username}', '${password}')`;
 
-        dbConnection.query(sql, function (err, result) {
+        dbConnection.query(sql, function (err) {
             if (err) {
                 throw err;
             }
@@ -24,7 +24,7 @@ class UserService {
     updateSessionId(sessionId, username) {
         let sql = `UPDATE users SET sessionID = '${sessionId}' WHERE username = '${username}'`;
 
-        dbConnection.query(sql, function (err, result) {
+        dbConnection.query(sql, function (err) {
             if (err) {
                 throw err;
             }
