@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+.menu li {
+    color: black;
+    text-align: center;
+    padding: 13px 46px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 1;
+    float: left;
+    cursor: pointer;
+}
+.menu li:hover {
+  background-color: #DB7093;
+  color: black;
+  opacity: 0.9;
+
+}
+.menu {
+    list-style-type: none;
+    position: absolute;
+    z-index: 5;
+}
+.menu li {
+    display:inline-block;
+}
+.menu li:last-child {
+    float: right;
+}
+#image {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}

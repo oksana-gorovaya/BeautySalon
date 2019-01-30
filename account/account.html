@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Account
+        </title>
+        <link href="account.css" rel="stylesheet" type="text/css"/>
+        <style>
+        nav {
+            background-color: #FFFFFF;
+            opacity: 0.5;
+            height: 10%;
+            width: 100%;
+        }
+    </style>
+    <body>
+        <nav class="menu"> <ul>
+            <li id="service">Наши Услуги</li> 
+            <li id="gallery">Галерея</li>
+            <li id="new">Новинки</li>
+            <li id="feedback">Отзывы</li>
+            <li id="contacts">Контакты</li>
+            <li id="account">Личный кабинет</li>
+        </ul> </nav>
+        
+        <h2>Регистрация</h2>
+
+        <form action="http://127.0.0.1:3000/users" method="post">
+            Введите логин<br>
+            <input type="text" name="username">
+            <br>
+            Введите пароль<br>
+            <input type="text" name="password">
+            <br><br>
+            <input type="submit" value="Готово">
+        </form>
+        
+        <h2>Вход</h2>
+
+        <form action="http://127.0.0.1:3000/users" method="get">
+            Введите свой логин<br>
+            <input type="text" name="username">
+            <br>
+            Введите свой пароль<br>
+            <input type="text" name="password">
+            <br><br>
+            <input type="submit" value="Готово">
+        </form>
+        <script type="text/javascript" src="/main/redirect.js"></script>
+    </body>

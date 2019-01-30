@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Gallery
+        </title>
+        <link href="gallery.css" rel="stylesheet" type="text/css"/>
+        <link href="/img/favicon.png" rel="shortcut icon" type="image/png">
+        <style>
+            html {
+                height: 100%;
+            }
+            nav {
+                background-color: #FFFFFF;
+                opacity: 0.7;
+                height: 10%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class = "menu"> <ul>
+        <li id="service">Наши Услуги</li> 
+        <li id="gallery">Галерея</li>
+        <li id="new">Новинки</li>
+        <li id="feedback">Отзывы</li>
+        <li id="contacts">Контакты</li>
+        <li id="account">Личный кабинет</li>
+    </ul> </nav>
+    
+        <div class="row">
+            <div class="column"> 
+                <img class="gallery" src="/img/1.jpg" alt="SnowBirds" style="width:100%">
+                <p>Название<br>Мастер: </p>
+            </div>
+            
+            <div class="column">
+                <img class="gallery" src="/img/2.jpg" alt="Parrot" style="width:100%">
+                <p>Название<br>Мастер: </p>
+            </div>
+            <div class="column">
+                <img class="gallery" src="/img/3.jpg" alt="Flowers" style="width:100%">
+                <p>Название<br>Мастер: </p>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+        <script type="text/javascript" src="/main/redirect.js"></script>
+        <script type="text/javascript" src="gallery.js"></script>
+    </body>
+</html>
